@@ -1,0 +1,99 @@
+.contact-dialog {
+  max-width: 480px;
+  padding: 32px 28px;
+}
+
+.contact-modal-header {
+  margin-bottom: 22px;
+}
+
+.contact-heading {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 6px;
+  letter-spacing: -0.02em;
+}
+
+.contact-subheading {
+  font-size: 13.5px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.btn-contact-submit {
+  width: 100%;
+  padding: 13px;
+  font-size: 15px;
+  border-radius: var(--radius-pill);
+  margin-top: 4px;
+}
+
+.contact-success-view {
+  text-align: center;
+  padding: 20px 8px;
+}
+
+.contact-success-icon-wrap {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #dcfce7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.contact-success-svg {
+  color: #16a34a;
+}
+
+.contact-success-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.contact-success-msg {
+  font-size: 14.5px;
+  color: #334155;
+  line-height: 1.55;
+}
+
+@media (max-width: 390px) {
+  .contact-dialog {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .contact-heading,
+[data-theme="dark"] .contact-success-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .contact-subheading {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .contact-success-msg {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .contact-success-icon-wrap {
+  background: rgba(34, 197, 94, 0.15);
+}
+
+[data-theme="dark"] .contact-success-svg {
+  color: #4ade80;
+}
+

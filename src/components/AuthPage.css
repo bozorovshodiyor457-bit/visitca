@@ -1,0 +1,525 @@
+/* Auth Page Styling — 100% Matching Screenshots 1 & 2 */
+
+.auth-page-wrapper {
+  background-color: #ffffff;
+  min-height: calc(100vh - 72px);
+  padding: 40px 0 80px;
+}
+
+.auth-page-container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.auth-back-home-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  color: #64748b;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 24px;
+  padding: 0;
+  font-family: inherit;
+  transition: color 0.15s ease;
+}
+
+.auth-back-home-btn:hover {
+  color: #0284c7;
+}
+
+.auth-page-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: stretch;
+}
+
+/* Left Column: Big Dark Card (Matching Screenshots 1 & 2) */
+.auth-left-card {
+  background: linear-gradient(145deg, #070d18 0%, #0d1726 100%);
+  border-radius: 28px;
+  padding: 48px;
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-left-card::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(2, 132, 199, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.auth-left-card-text {
+  font-family: var(--font-heading, inherit);
+  font-size: 34px;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  position: relative;
+  z-index: 1;
+}
+
+/* Right Column: Form Container */
+.auth-right-pane {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.auth-pane-title {
+  font-family: var(--font-heading, inherit);
+  font-size: 38px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.025em;
+  margin: 0 0 8px;
+  line-height: 1.15;
+}
+
+.auth-pane-subtitle {
+  font-size: 14.5px;
+  color: #64748b;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+/* Pill Switcher [ Kirish ] [ Ro'yxatdan o'tish ] (Matching Screenshot) */
+.auth-pill-switch {
+  background-color: #f1f5f9;
+  border-radius: 12px;
+  padding: 4px;
+  display: flex;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.auth-pill-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: #64748b;
+  transition: all 0.2s ease;
+  font-family: inherit;
+  text-align: center;
+}
+
+.auth-pill-btn.is-active {
+  background-color: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Styles */
+.auth-form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.auth-form-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.auth-form-label span.optional {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.auth-form-input {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 13px 16px;
+  font-size: 14.5px;
+  color: #0f172a;
+  outline: none;
+  transition: border-color 0.15s ease;
+  font-family: inherit;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.auth-form-input:focus {
+  border-color: #0284c7;
+}
+
+/* Password Input with Show Button */
+.auth-password-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.auth-password-input {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 13px 80px 13px 16px;
+  font-size: 14.5px;
+  color: #0f172a;
+  outline: none;
+  width: 100%;
+  font-family: inherit;
+  background-color: #ffffff;
+}
+
+.auth-password-input:focus {
+  border-color: #0284c7;
+}
+
+.auth-password-toggle-btn {
+  position: absolute;
+  right: 8px;
+  background-color: #f1f5f9;
+  border-radius: 8px;
+  border: none;
+  color: #0f172a;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 14px;
+  font-family: inherit;
+  transition: background-color 0.15s ease;
+}
+
+.auth-password-toggle-btn:hover {
+  background-color: #e2e8f0;
+}
+
+.auth-divider-line {
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 22px 0 18px;
+  width: 100%;
+}
+
+.auth-input-hint {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 4px;
+}
+
+/* Remember me & Forgot Password Row (Screenshot 1) */
+.auth-remember-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px 0 10px;
+  font-size: 13.5px;
+}
+
+.auth-remember-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #334155;
+  cursor: pointer;
+  user-select: none;
+}
+
+.auth-remember-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0284c7;
+  cursor: pointer;
+}
+
+.auth-forgot-link {
+  color: #0284c7;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  padding: 0;
+}
+
+.auth-forgot-link:hover {
+  text-decoration: underline;
+}
+
+/* Main Blue CTA Button (Screenshots 1 & 2) */
+.btn-auth-submit {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 24px;
+  padding: 14px 24px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  width: 100%;
+  font-family: inherit;
+  margin-top: 10px;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+.btn-auth-submit:hover:not(:disabled) {
+  background-color: #0369a1;
+  transform: translateY(-1px);
+}
+
+.btn-auth-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Footnotes */
+.auth-footnote-text {
+  font-size: 13.5px;
+  color: #64748b;
+  text-align: center;
+  margin-top: 24px;
+  line-height: 1.5;
+}
+
+.auth-footnote-link {
+  color: #0284c7;
+  font-weight: 600;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-family: inherit;
+  padding: 0;
+  margin-left: 4px;
+}
+
+.auth-footnote-link:hover {
+  text-decoration: underline;
+}
+
+/* Error banner */
+.auth-error-banner {
+  background-color: #fef2f2;
+  border: 1px solid #fee2e2;
+  color: #b91c1c;
+  padding: 12px 16px;
+  border-radius: 10px;
+  font-size: 13.5px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .auth-page-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .auth-left-card {
+    min-height: 240px;
+    padding: 32px;
+  }
+
+  .auth-left-card-text {
+    font-size: 26px;
+  }
+
+  .auth-pane-title {
+    font-size: 30px;
+  }
+}
+
+/* Mobile Viewport (≤ 768px, 100% Matching Screenshot 5) */
+@media (max-width: 768px) {
+  .auth-page-wrapper {
+    padding: 24px 0 48px;
+  }
+
+  .auth-page-container {
+    padding: 0 18px;
+    max-width: 100%;
+  }
+
+  .auth-back-home-btn {
+    display: none;
+  }
+
+  .auth-page-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  /* Screenshot 5: Hide left dark card on mobile, show only the login form */
+  .auth-left-card {
+    display: none;
+  }
+
+  .auth-right-pane {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .auth-pane-title {
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+  }
+
+  .auth-pane-subtitle {
+    font-size: 14.5px;
+    line-height: 1.5;
+    margin-bottom: 22px;
+  }
+
+  .auth-pill-switch {
+    margin-bottom: 22px;
+    background-color: #f8fafc;
+    border: 1px solid #f1f5f9;
+  }
+
+  .auth-pill-btn {
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .auth-form-input,
+  .auth-password-input {
+    height: 48px;
+    border-radius: 12px;
+    font-size: 14.5px;
+  }
+
+  .auth-password-input {
+    padding-right: 110px;
+  }
+
+  .auth-password-toggle-btn {
+    right: 8px;
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+
+  .btn-auth-submit {
+    height: 48px;
+    border-radius: 9999px;
+    padding: 0 20px;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 14px;
+    box-shadow: none;
+  }
+
+  .auth-divider-line {
+    margin: 22px 0 18px;
+  }
+
+  .auth-footnote-text {
+    margin-top: 0;
+    font-size: 14px;
+  }
+}
+
+/* Dark Mode Overrides for Auth Page */
+[data-theme="dark"] .auth-page-wrapper {
+  background-color: var(--color-bg-page);
+}
+
+[data-theme="dark"] .auth-pane-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .auth-pane-subtitle,
+[data-theme="dark"] .auth-label,
+[data-theme="dark"] .auth-footnote-text {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .auth-back-home-btn {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .auth-back-home-btn:hover {
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .auth-pill-switch {
+  background-color: #131d2e;
+  border: 1px solid #1e2d42;
+}
+
+[data-theme="dark"] .auth-pill-btn {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .auth-pill-btn.is-active {
+  background-color: #1e2d42;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .auth-form-input,
+[data-theme="dark"] .auth-password-input {
+  background-color: #131d2e;
+  border-color: #1e2d42;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .auth-form-input:focus,
+[data-theme="dark"] .auth-password-input:focus {
+  border-color: #38bdf8;
+}
+
+[data-theme="dark"] .auth-password-toggle-btn {
+  background-color: #1e293b;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .auth-password-toggle-btn:hover {
+  background-color: #273549;
+}
+
+[data-theme="dark"] .auth-divider-line {
+  background-color: #1e2d42;
+}
+
+[data-theme="dark"] .auth-input-addon {
+  color: #64748b;
+}
+
+[data-theme="dark"] .auth-footnote-link {
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .auth-error-banner {
+  background-color: rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+}
+

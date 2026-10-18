@@ -1,0 +1,108 @@
+.cta-banner-section {
+  padding: 20px 0 64px;
+}
+
+.cta-banner-card {
+  background: linear-gradient(95deg, #0284c7 0%, #06b6d4 30%, #10b981 72%, #4ade80 100%);
+  border-radius: var(--radius-xl);
+  padding: 68px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  box-shadow: 0 16px 40px -10px rgba(6, 182, 212, 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-banner-title {
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.035em;
+  color: #0b1722;
+  margin: 0;
+}
+
+.cta-br-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .cta-br-mobile {
+    display: block;
+  }
+}
+
+.cta-banner-action {
+  flex-shrink: 0;
+}
+
+.btn-cta-dark {
+  background-color: #0b1722;
+  color: #ffffff;
+  padding: 15px 36px;
+  font-size: 15.5px;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(11, 23, 34, 0.25);
+  transition: all var(--transition-normal);
+  white-space: nowrap;
+}
+
+.btn-cta-dark:hover {
+  background-color: #020617;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(11, 23, 34, 0.35);
+}
+
+.btn-cta-dark:active {
+  transform: scale(0.97);
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .cta-banner-card {
+    padding: 48px 36px;
+  }
+  .cta-banner-title {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .cta-banner-section {
+    padding: 16px 0 48px;
+  }
+
+  .cta-banner-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 38px 24px;
+    border-radius: 24px;
+    gap: 24px;
+    background: linear-gradient(135deg, #0284c7 0%, #06b6d4 38%, #10b981 78%, #34d399 100%);
+  }
+
+  .cta-banner-title {
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: -0.025em;
+  }
+
+  .cta-banner-action {
+    width: auto;
+  }
+
+  .btn-cta-dark {
+    width: auto;
+    padding: 13px 28px;
+    font-size: 14.5px;
+    border-radius: var(--radius-pill);
+    box-shadow: 0 4px 15px rgba(11, 23, 34, 0.2);
+  }
+}

@@ -1,0 +1,122 @@
+.process-section {
+  padding: 24px 0 64px;
+}
+
+.process-card {
+  background-color: #f6f8fa;
+  border-radius: var(--radius-xl);
+  padding: 56px 48px;
+  border: 1px solid #edf0f3;
+}
+
+.process-main-title {
+  font-family: var(--font-heading);
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #0f172a;
+  margin-bottom: 48px;
+}
+
+.process-br-desktop {
+  display: block;
+}
+
+.process-columns-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.process-col-item {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cyan / Teal Top Accent Bar */
+.process-accent-bar {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #38bdf8 0%, #2dd4bf 100%);
+  margin-bottom: 22px;
+  border-radius: 2px;
+}
+
+.process-col-title {
+  font-size: 17.5px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.process-col-desc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: #64748b;
+  font-weight: 400;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .process-card {
+    padding: 40px 32px;
+  }
+  .process-main-title {
+    font-size: 30px;
+    margin-bottom: 36px;
+  }
+  .process-columns-grid {
+    gap: 28px;
+  }
+}
+
+/* Mobile Viewport (≤ 640px, e.g. 390px, 393px, 412px - Matching Screenshot 4) */
+@media (max-width: 640px) {
+  .process-section {
+    padding: 16px 0 40px;
+  }
+  .process-card {
+    padding: 32px 20px;
+    border-radius: 24px;
+  }
+  .process-main-title {
+    font-size: 25px;
+    line-height: 1.25;
+    margin-bottom: 24px;
+    letter-spacing: -0.025em;
+  }
+  .process-columns-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .process-col-title {
+    font-size: 16.5px;
+    margin-bottom: 8px;
+  }
+  .process-col-desc {
+    font-size: 13.5px;
+    line-height: 1.55;
+  }
+  .process-accent-bar {
+    margin-bottom: 18px;
+    height: 1.5px;
+  }
+}
+
+/* Dark Mode Overrides */
+[data-theme="dark"] .process-card {
+  background-color: #0d1624;
+  border-color: #1a273a;
+}
+
+[data-theme="dark"] .process-main-title,
+[data-theme="dark"] .process-col-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .process-col-desc {
+  color: #94a3b8;
+}
+

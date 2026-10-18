@@ -1,0 +1,1881 @@
+/* Profile Page Styling — 100% Matching Screenshots 3, 4, 5 */
+
+.profile-page-wrapper {
+  background-color: #ffffff;
+  min-height: calc(100vh - 72px);
+  padding: 32px 0 80px;
+}
+
+.profile-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Profile Header Banner (Screenshots 3, 4, 5) */
+.profile-header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #f1f5f9;
+  margin-bottom: 36px;
+}
+
+.profile-header-user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile-avatar-circle {
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  border: 3.5px solid #06b6d4;
+  background-color: #ffffff;
+  color: #0284c7;
+  font-size: 28px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.profile-avatar-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-user-names {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-user-fullname {
+  font-family: var(--font-heading, inherit);
+  font-size: 32px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.profile-user-contacts {
+  font-size: 14px;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Logout Button on Right (Matching Screenshot) */
+.btn-profile-logout {
+  background-color: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  color: #ef4444;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.btn-profile-logout:hover {
+  background-color: #fef2f2;
+  border-color: #fca5a5;
+}
+
+/* 2-Column Layout */
+.profile-body-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+/* Left Sidebar Tabs (Matching Screenshots 3, 4, 5) */
+.profile-sidebar-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 18px;
+  border-radius: 12px;
+  border: none;
+  background-color: transparent;
+  color: #475569;
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  text-align: left;
+  width: 100%;
+}
+
+.profile-tab-btn:hover {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+.profile-tab-btn.is-active {
+  background-color: #f0f9ff;
+  color: #0284c7;
+  font-weight: 700;
+}
+
+.profile-tab-badge {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.profile-tab-btn.is-active .profile-tab-badge {
+  color: #0284c7;
+}
+
+/* Right Content Area */
+.profile-content-area {
+  min-height: 400px;
+}
+
+.profile-section-heading {
+  font-family: var(--font-heading, inherit);
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.015em;
+  margin: 0 0 24px;
+}
+
+/* TAB 1: Shaxsiy ma'lumotlar (Screenshot 3) */
+.profile-inputs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.profile-field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.profile-field-label {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.profile-field-input {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14.5px;
+  color: #0f172a;
+  outline: none;
+  background-color: #ffffff;
+  font-family: inherit;
+  transition: border-color 0.15s ease;
+}
+
+.profile-field-input:focus {
+  border-color: #0284c7;
+}
+
+.btn-profile-save {
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14.5px;
+  padding: 12px 28px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  font-family: inherit;
+  margin-bottom: 36px;
+}
+
+.btn-profile-save:hover {
+  background-color: #0369a1;
+}
+
+/* Notification Box (Screenshot 3) */
+.profile-notification-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+}
+
+.profile-notif-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-notif-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.profile-notif-desc {
+  font-size: 13px;
+  color: #64748b;
+}
+
+/* Switch Toggle (Matching Screenshot 3) */
+.toggle-switch-wrap {
+  position: relative;
+  width: 48px;
+  height: 26px;
+  cursor: pointer;
+}
+
+.toggle-switch-wrap input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cbd5e1;
+  border-radius: 26px;
+  transition: 0.2s;
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
+.toggle-switch-wrap input:checked + .toggle-slider {
+  background-color: #06b6d4;
+}
+
+.toggle-switch-wrap input:checked + .toggle-slider:before {
+  transform: translateX(22px);
+}
+
+/* TAB 2: Mening turlarim (Screenshot 4) */
+.profile-tours-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.profile-tours-filter-pills {
+  display: flex;
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.tours-filter-btn {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  background: transparent;
+  color: #64748b;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.tours-filter-btn.is-active {
+  background: #ffffff;
+  color: #0f172a;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.profile-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-order-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #ffffff;
+}
+
+.order-card-left-group {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.order-card-thumb {
+  width: 100px;
+  height: 80px;
+  border-radius: 12px;
+  background-color: #f1f5f9;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.order-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-card-badge-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.order-status-badge {
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+.order-status-pending {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+.order-status-confirmed {
+  background-color: #dcfce7;
+  color: #15803d;
+}
+
+.order-code-badge {
+  font-size: 12.5px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.order-tour-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.order-tour-meta {
+  font-size: 13.5px;
+  color: #64748b;
+}
+
+.order-tour-companions {
+  font-size: 13px;
+  color: #475569;
+}
+
+.order-card-right-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.order-total-price {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.btn-order-pay {
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 13.5px;
+  padding: 8px 18px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.btn-order-pay:hover {
+  background-color: #0369a1;
+}
+
+/* TAB 3: Mening hamrohlarim (Screenshot 5) */
+.profile-companions-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.companions-header-text h2 {
+  font-family: var(--font-heading, inherit);
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 6px;
+}
+
+.companions-header-text p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+.btn-add-companion {
+  background-color: #0284c7;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.btn-add-companion:hover {
+  background-color: #0369a1;
+}
+
+.profile-companions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.profile-companion-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 22px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.companion-top-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.companion-circle-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #e0f2fe;
+  color: #0284c7;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.companion-name-block {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.companion-fullname {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.companion-relation {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.companion-details-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13.5px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 14px;
+}
+
+.companion-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13.5px;
+}
+
+.companion-action-edit {
+  color: #0284c7;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
+.companion-action-edit:hover {
+  text-decoration: underline;
+}
+
+.companion-action-delete {
+  color: #ef4444;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 0;
+}
+
+.companion-action-delete:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .profile-body-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .profile-inputs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-companions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-order-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-card-right-group {
+    align-items: flex-start;
+    width: 100%;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 12px;
+  }
+}
+
+/* ========================================================
+ * TAB 4: Sevimlilar (Screenshot 1)
+ * ======================================================== */
+.profile-favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 1024px) {
+  .profile-favorites-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-favorites-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile-fav-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background-color: #ffffff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.profile-fav-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.fav-card-image-box {
+  position: relative;
+  width: 100%;
+  height: 160px;
+  background-color: #f1f5f9;
+  overflow: hidden;
+}
+
+.fav-card-image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fav-card-img-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+}
+
+.fav-card-category-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(4px);
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #0f172a;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.fav-card-heart-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 13px;
+  transition: transform 0.15s ease;
+}
+
+.fav-card-heart-btn:hover {
+  transform: scale(1.1);
+}
+
+.fav-card-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.fav-card-meta {
+  font-size: 12.5px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.fav-card-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.35;
+  margin: 0 0 16px;
+  flex: 1;
+}
+
+.fav-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.fav-card-price {
+  font-size: 16px;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.fav-card-org-type {
+  background-color: #e0f2fe;
+  color: #0284c7;
+  padding: 3px 8px;
+  border-radius: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+/* ========================================================
+ * TAB 5: Izohlarim (Screenshot 2)
+ * ======================================================== */
+.profile-reviews-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.reviews-header-text h2 {
+  font-family: var(--font-heading, inherit);
+  font-size: 24px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 6px;
+}
+
+.reviews-header-text p {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0;
+}
+
+.btn-write-review {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.btn-write-review:hover {
+  background-color: #0369a1;
+}
+
+.profile-review-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 22px 24px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.review-card-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.review-tour-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+}
+
+.review-status-badge {
+  background-color: #dcfce7;
+  color: #15803d;
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.review-rating-date-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-stars-group {
+  color: #f59e0b;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.review-date-text {
+  font-size: 13px;
+  color: #64748b;
+}
+
+.review-comment-text {
+  font-size: 14px;
+  color: #334155;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.review-actions-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 13.5px;
+  margin-top: 4px;
+}
+
+.review-action-edit {
+  color: #0284c7;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.review-action-edit:hover {
+  text-decoration: underline;
+}
+
+.review-action-delete {
+  color: #ef4444;
+  font-weight: 600;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.review-action-delete:hover {
+  text-decoration: underline;
+}
+
+/* ========================================================
+ * Hisobdan chiqish Confirmation Modal (Screenshot 3)
+ * ======================================================== */
+.logout-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logout-modal-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  max-width: 440px;
+  width: 100%;
+  padding: 36px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  animation: logoutModalPop 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes logoutModalPop {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.logout-icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #fee2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.logout-modal-title {
+  font-family: var(--font-heading, inherit);
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 10px;
+  line-height: 1.25;
+}
+
+.logout-modal-desc {
+  font-size: 14px;
+  color: #64748b;
+  line-height: 1.5;
+  margin: 0 0 28px;
+  max-width: 340px;
+}
+
+.logout-modal-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.btn-logout-cancel {
+  flex: 1;
+  background-color: #ffffff;
+  border: 1.5px solid #e2e8f0;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 14.5px;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.btn-logout-cancel:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.btn-logout-confirm {
+  flex: 1;
+  background-color: #c2410c;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14.5px;
+  padding: 12px 20px;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.15s ease;
+  box-shadow: 0 4px 12px rgba(194, 65, 12, 0.25);
+}
+
+.btn-logout-confirm:hover {
+  background-color: #9a3412;
+}
+
+/* Mobile Responsiveness for Profile Page (<= 768px, 100% Matching Screenshots 3, 4, 5) */
+@media (max-width: 768px) {
+  .profile-page-wrapper {
+    padding: 24px 0 48px;
+  }
+
+  .profile-page-container {
+    padding: 0 18px;
+  }
+
+  /* Screenshot 3 & 5: Stacked Profile Header */
+  .profile-header-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    border-bottom: none;
+  }
+
+  .profile-header-user-info {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  .profile-avatar-circle {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2.5px solid #06b6d4;
+    background-color: #ffffff;
+    color: #0284c7;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .profile-user-fullname {
+    font-size: 24px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 4px;
+    letter-spacing: -0.02em;
+  }
+
+  .profile-user-contacts {
+    font-size: 13.5px;
+    color: #64748b;
+    margin-bottom: 12px;
+  }
+
+  .btn-profile-logout {
+    align-self: flex-start;
+    border: 1px solid #fee2e2;
+    background-color: #ffffff;
+    color: #dc2626;
+    border-radius: 9999px;
+    padding: 7px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 24px;
+  }
+
+  .profile-body-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* Screenshot 3 & 5: Horizontal Tabs Row */
+  .profile-sidebar-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 12px;
+    gap: 8px;
+    border-bottom: 1px solid #f1f5f9;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .profile-sidebar-tabs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .profile-tab-btn {
+    white-space: nowrap;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    width: auto;
+    border-radius: 10px;
+    border: none;
+    background: transparent;
+    color: #0f172a;
+    flex-shrink: 0;
+  }
+
+  .profile-tab-btn.is-active {
+    background-color: #f0f9ff;
+    color: #0f172a;
+  }
+
+  .profile-tab-badge {
+    display: none;
+  }
+
+  /* Screenshot 3: Form Fields */
+  .profile-section-heading {
+    font-size: 20px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 16px;
+  }
+
+  .profile-inputs-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .profile-field-label {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 6px;
+  }
+
+  .profile-field-input {
+    height: 48px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    padding: 0 16px;
+    font-size: 14.5px;
+    width: 100%;
+  }
+
+  /* Screenshot 4: Save button and SMS Notifications */
+  .btn-profile-save {
+    background-color: #0284c7;
+    color: #ffffff;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-size: 14.5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    margin-top: 6px;
+    margin-bottom: 28px;
+  }
+
+  .profile-notification-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .profile-notif-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+  }
+
+  .profile-notif-desc {
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.4;
+  }
+
+  /* Screenshot 5: Mening turlarim */
+  .profile-tours-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .profile-tours-filter-pills {
+    display: flex;
+    gap: 8px;
+    background: transparent;
+    padding: 0;
+  }
+
+  .tours-filter-btn {
+    padding: 7px 16px;
+    font-size: 13.5px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #f8fafc;
+    color: #64748b;
+    font-weight: 500;
+  }
+
+  .tours-filter-btn.is-active {
+    background-color: #ffffff;
+    border-color: #e2e8f0;
+    color: #0f172a;
+    font-weight: 600;
+    box-shadow: none;
+  }
+
+  .profile-orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .profile-order-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 16px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .order-card-left-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .order-card-thumb {
+    width: 100%;
+    height: 140px;
+    border-radius: 14px;
+    background-color: #f1f5f9;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  .order-card-badge-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+
+  .order-status-badge {
+    background-color: #fef3c7;
+    color: #b45309;
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 8px;
+  }
+
+  .order-code-badge {
+    font-size: 12px;
+    color: #64748b;
+  }
+
+  .order-tour-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.35;
+    margin: 0 0 4px;
+  }
+
+  .order-tour-meta {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 4px;
+  }
+
+  .order-tour-companions {
+    font-size: 13px;
+    color: #64748b;
+  }
+
+  /* Screenshot 1: Order Card Price & Payment */
+  .order-card-right-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .order-total-price {
+    font-size: 16px;
+    font-weight: 800;
+    color: #0f172a;
+    text-align: right;
+  }
+
+  .btn-order-pay {
+    background-color: #0284c7;
+    color: #ffffff;
+    border-radius: 9999px;
+    padding: 8px 20px;
+    font-size: 13.5px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+  }
+
+  /* Screenshot 2 & 3: Mening hamrohlarim */
+  .profile-companions-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-bottom: 20px;
+  }
+
+  .companions-header-text h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 6px;
+  }
+
+  .companions-header-text p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0 0 16px;
+  }
+
+  .btn-add-companion {
+    background-color: #0284c7;
+    color: #ffffff;
+    border-radius: 9999px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    margin-bottom: 20px;
+  }
+
+  .profile-companions-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .profile-companion-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .companion-top-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .companion-circle-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: #e0f2fe;
+    color: #0284c7;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .companion-fullname {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+  }
+
+  .companion-relation {
+    font-size: 13px;
+    color: #64748b;
+  }
+
+  .companion-details-col {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 13.5px;
+    color: #0f172a;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 14px;
+  }
+
+  .companion-actions-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .companion-action-edit {
+    color: #0284c7;
+    font-weight: 600;
+    font-size: 13.5px;
+  }
+
+  .companion-action-delete {
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 13.5px;
+  }
+
+  /* Screenshot 4 & 5: Sevimlilar */
+  .profile-favorites-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .profile-fav-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    background-color: #ffffff;
+    overflow: hidden;
+  }
+
+  .fav-card-image-box {
+    height: 220px;
+    position: relative;
+    background-color: #f1f5f9;
+  }
+
+  .fav-card-category-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #ffffff;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0f172a;
+  }
+
+  .fav-card-heart-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .fav-card-body {
+    padding: 16px 20px;
+  }
+
+  .fav-card-meta {
+    font-size: 12.5px;
+    color: #64748b;
+    margin-bottom: 4px;
+  }
+
+  .fav-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.35;
+    margin: 0 0 14px;
+  }
+
+  .fav-card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .fav-card-price {
+    font-size: 15.5px;
+    font-weight: 800;
+    color: #0f172a;
+  }
+
+  .fav-card-org-type {
+    background-color: #e0f2fe;
+    color: #0284c7;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  /* Screenshot 1 & 2: Izohlarim tab on mobile */
+  .profile-reviews-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    margin-bottom: 16px;
+  }
+
+  .reviews-header-text h2 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0f172a;
+    margin: 0 0 6px;
+  }
+
+  .reviews-header-text p {
+    font-size: 13.5px;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0 0 16px;
+  }
+
+  .btn-write-review {
+    background-color: #0284c7;
+    color: #ffffff;
+    border-radius: 9999px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    width: fit-content;
+    margin-bottom: 22px;
+  }
+
+  .profile-review-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 16px;
+  }
+
+  .review-card-top-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .review-tour-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  .review-status-badge {
+    background-color: #dcfce7;
+    color: #15803d;
+    font-size: 11.5px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 8px;
+    width: fit-content;
+  }
+
+  .review-rating-date-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .review-stars-group {
+    color: #f59e0b;
+    font-size: 15px;
+    letter-spacing: 2px;
+    line-height: 1;
+  }
+
+  .review-date-text {
+    font-size: 13px;
+    color: #64748b;
+    font-weight: 500;
+  }
+
+  .review-comment-text {
+    font-size: 14px;
+    color: #334155;
+    line-height: 1.55;
+    margin: 0 0 16px;
+  }
+
+  .review-actions-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .review-action-edit {
+    color: #0284c7;
+    font-weight: 600;
+    font-size: 13.5px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .review-action-delete {
+    color: #b91c1c;
+    font-weight: 600;
+    font-size: 13.5px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  /* Screenshot 3: Logout Modal on mobile */
+  .logout-modal-backdrop {
+    padding: 20px;
+  }
+
+  .logout-modal-card {
+    width: calc(100% - 32px);
+    max-width: 360px;
+    padding: 32px 24px 28px;
+    border-radius: 28px;
+    text-align: center;
+  }
+
+  .logout-icon-circle {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 16px;
+  }
+
+  .logout-modal-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0 0 8px;
+  }
+
+  .logout-modal-desc {
+    font-size: 13.5px;
+    max-width: 280px;
+    margin: 0 0 24px;
+  }
+
+  .logout-modal-actions {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .btn-logout-cancel {
+    flex: 1;
+    border-radius: 9999px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .btn-logout-confirm {
+    flex: 1;
+    border-radius: 9999px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .order-card-meta-chips {
+    gap: 8px;
+  }
+
+  .review-modal-card {
+    padding: 24px 20px;
+  }
+}
+
+/* Dark Mode Overrides for Profile Page — 100% Comprehensive */
+[data-theme="dark"] .profile-page-wrapper {
+  background-color: var(--color-bg-page);
+}
+
+[data-theme="dark"] .profile-header-banner {
+  border-bottom-color: #1e293b;
+}
+
+[data-theme="dark"] .profile-user-fullname,
+[data-theme="dark"] .profile-section-heading,
+[data-theme="dark"] .profile-notif-title,
+[data-theme="dark"] .order-tour-title,
+[data-theme="dark"] .companion-fullname,
+[data-theme="dark"] .fav-card-title,
+[data-theme="dark"] .order-total-price,
+[data-theme="dark"] .fav-card-price,
+[data-theme="dark"] .profile-field-label {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .profile-user-contacts,
+[data-theme="dark"] .profile-notif-desc,
+[data-theme="dark"] .order-meta-item,
+[data-theme="dark"] .companion-meta-item,
+[data-theme="dark"] .fav-card-meta,
+[data-theme="dark"] .profile-tab-btn {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .btn-profile-logout {
+  background-color: #101928;
+  border-color: #1e2d42;
+  color: #ef4444;
+}
+
+[data-theme="dark"] .btn-profile-logout:hover {
+  background-color: #271418;
+  border-color: #7f1d1d;
+}
+
+/* Sidebar Tabs */
+[data-theme="dark"] .profile-tab-btn:hover {
+  background-color: #131d2e;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .profile-tab-btn.is-active {
+  background-color: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .profile-tab-btn.is-active .profile-tab-badge {
+  background-color: rgba(56, 189, 248, 0.25);
+  color: #38bdf8;
+}
+
+/* Form Inputs */
+[data-theme="dark"] .profile-field-input {
+  background-color: #0e1624;
+  border-color: #1e2d42;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .profile-field-input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+[data-theme="dark"] .profile-field-input::placeholder {
+  color: #64748b;
+}
+
+/* Notification & Orders Filter */
+[data-theme="dark"] .profile-notification-card {
+  background-color: #101928;
+  border-color: #1e2d42;
+}
+
+[data-theme="dark"] .profile-tours-filter-pills {
+  background-color: #0e1624;
+}
+
+[data-theme="dark"] .tours-filter-btn {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .tours-filter-btn.is-active {
+  background-color: #1e2d42;
+  color: #f8fafc;
+}
+
+/* Cards (Orders, Companions, Favorites) */
+[data-theme="dark"] .profile-order-card,
+[data-theme="dark"] .profile-companion-card,
+[data-theme="dark"] .profile-fav-card {
+  background-color: #101928;
+  border-color: #1e2d42;
+}
+
+[data-theme="dark"] .profile-avatar-circle {
+  background-color: #101928;
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .companion-circle-avatar {
+  background-color: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .companion-details-col {
+  color: #94a3b8;
+  border-bottom-color: #1e293b;
+}
+
+[data-theme="dark"] .fav-card-image-box {
+  background-color: #131d2e;
+}
+
+[data-theme="dark"] .fav-card-category-badge {
+  background: rgba(16, 25, 40, 0.9);
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .fav-card-heart-btn {
+  background-color: #131d2e;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .profile-review-card {
+  background-color: #101928;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .review-tour-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .review-comment-text {
+  color: #cbd5e1;
+}
+
+[data-theme="dark"] .review-status-badge {
+  background-color: rgba(34, 197, 94, 0.2);
+  color: #4ade80;
+}
+
+[data-theme="dark"] .logout-modal-card {
+  background-color: #101928;
+  border: 1px solid #1e293b;
+}
+
+[data-theme="dark"] .logout-modal-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .logout-modal-desc {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .btn-logout-cancel {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .review-modal-card {
+  background-color: #101928;
+  border: 1px solid #1e293b;
+}
+
+[data-theme="dark"] .review-textarea {
+  background-color: #131d2e;
+  border-color: #1e293b;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .btn-review-cancel {
+  background-color: #131d2e;
+  border-color: #1e293b;
+  color: #f8fafc;
+}
+
+
+

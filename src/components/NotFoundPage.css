@@ -1,0 +1,153 @@
+/* 404 Not Found Page Styling — 100% Matching Screenshot 4 */
+
+.notfound-wrapper {
+  min-height: calc(100vh - 72px - 360px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 24px 100px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.notfound-container {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notfound-code {
+  font-family: var(--font-heading, inherit);
+  font-size: 88px;
+  font-weight: 800;
+  color: #06b6d4;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  margin-bottom: 12px;
+}
+
+.notfound-title {
+  font-family: var(--font-heading, inherit);
+  font-size: 34px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.notfound-desc {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0 0 32px;
+  line-height: 1.5;
+  max-width: 420px;
+}
+
+.notfound-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.btn-notfound-home {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 9999px;
+  padding: 12px 28px;
+  font-size: 14.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+}
+
+.btn-notfound-home:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.btn-notfound-tours {
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 9999px;
+  padding: 12px 28px;
+  font-size: 14.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  font-family: inherit;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+}
+
+.btn-notfound-tours:hover {
+  background-color: #0369a1;
+}
+
+@media (max-width: 768px) {
+  .notfound-wrapper {
+    padding: 56px 16px 80px;
+  }
+
+  .notfound-code {
+    font-size: 72px;
+    margin-bottom: 8px;
+  }
+
+  .notfound-title {
+    font-size: 26px;
+    margin-bottom: 8px;
+  }
+
+  .notfound-desc {
+    font-size: 14px;
+    max-width: 290px;
+    margin: 0 auto 28px;
+    line-height: 1.5;
+  }
+
+  .notfound-actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: auto;
+    flex-wrap: nowrap;
+  }
+
+  .btn-notfound-home,
+  .btn-notfound-tours {
+    width: auto;
+    padding: 12px 22px;
+    font-size: 14px;
+    white-space: nowrap;
+    border-radius: 9999px;
+  }
+}
+
+/* Dark mode */
+[data-theme="dark"] .notfound-wrapper {
+  background-color: #0b1120;
+}
+
+[data-theme="dark"] .notfound-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .notfound-desc {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .btn-notfound-home {
+  background-color: #1e293b;
+  border-color: #334155;
+  color: #f8fafc;
+}
+

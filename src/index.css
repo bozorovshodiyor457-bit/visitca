@@ -1,0 +1,535 @@
+:root {
+  color-scheme: light;
+  --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  
+  /* Semantic Theme Tokens */
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --card: #f8f9fa;
+  --card-foreground: #0f172a;
+  --popover: #ffffff;
+  --popover-foreground: #0f172a;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --primary: #0284c7;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --accent: #f8fafc;
+  --accent-foreground: #0284c7;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --ring: rgba(2, 132, 199, 0.25);
+
+  /* Color Palette */
+  --color-primary: #0284c7;
+  --color-primary-hover: #0369a1;
+  --color-primary-light: #e0f2fe;
+  --color-primary-glow: rgba(2, 132, 199, 0.25);
+  
+  --color-dark-hero: #0b1722;
+  --color-dark-card: #111f2d;
+  
+  --color-bg-page: #ffffff;
+  --color-bg-subtle: #f8fafc;
+  --color-bg-card: #f8f9fa;
+  
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+  --color-text-light: #94a3b8;
+  --color-text-white: #ffffff;
+  
+  --color-border: #e2e8f0;
+  --color-border-subtle: #f1f5f9;
+  
+  --color-cyan-badge-bg: #e6f6f9;
+  --color-cyan-badge-text: #0e7490;
+  --color-blue-badge-bg: #e0f2fe;
+  --color-blue-badge-text: #0369a1;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.07), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.08), 0 4px 10px -4px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 35px -5px rgba(0, 0, 0, 0.12), 0 8px 16px -6px rgba(0, 0, 0, 0.06);
+  --shadow-float: 0 25px 50px -12px rgba(11, 23, 34, 0.25);
+  
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-pill: 9999px;
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--color-bg-page);
+  color: var(--color-text-main);
+  line-height: 1.5;
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  font-size: 15px;
+  position: relative;
+}
+
+/* Base Container */
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (max-width: 640px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+/* Typography Utility */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text-main);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select {
+  font-family: inherit;
+}
+
+/* Button Base Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 24px;
+  border-radius: var(--radius-pill);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  white-space: nowrap;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  box-shadow: 0 4px 12px var(--color-primary-glow);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  box-shadow: 0 6px 18px var(--color-primary-glow);
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-main);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-text-main);
+  background-color: var(--color-bg-subtle);
+}
+
+/* Pill Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.badge-organizer-turop {
+  background-color: var(--color-blue-badge-bg);
+  color: var(--color-blue-badge-text);
+}
+
+.badge-organizer-gid {
+  background-color: var(--color-cyan-badge-bg);
+  color: var(--color-cyan-badge-text);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ========================================================
+ * DARK THEME (TUNGI REJIM) — 100% Comprehensive Design
+ * ======================================================== */
+[data-theme="dark"] {
+  color-scheme: dark;
+  
+  /* Semantic Theme Tokens */
+  --background: #080d16;
+  --foreground: #f8fafc;
+  --card: #101928;
+  --card-foreground: #f8fafc;
+  --popover: #101928;
+  --popover-foreground: #f8fafc;
+  --muted: #0e1624;
+  --muted-foreground: #94a3b8;
+  --border: #1e293b;
+  --input: #1e2d42;
+  --primary: #38bdf8;
+  --primary-foreground: #080d16;
+  --secondary: #131d2e;
+  --secondary-foreground: #f8fafc;
+  --accent: #1e293b;
+  --accent-foreground: #38bdf8;
+  --destructive: #f87171;
+  --destructive-foreground: #ffffff;
+  --ring: rgba(56, 189, 248, 0.25);
+
+  --color-primary: #38bdf8;
+  --color-primary-hover: #7dd3fc;
+  --color-primary-light: rgba(56, 189, 248, 0.15);
+  --color-primary-glow: rgba(56, 189, 248, 0.25);
+  
+  --color-dark-hero: #070d18;
+  --color-dark-card: #0d1726;
+  
+  --color-bg-page: #080d16;
+  --color-bg-subtle: #0e1624;
+  --color-bg-card: #121c2e;
+  
+  --color-text-main: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-text-light: #64748b;
+  --color-text-white: #ffffff;
+  
+  --color-border: #1e293b;
+  --color-border-subtle: #192436;
+  
+  --color-cyan-badge-bg: rgba(6, 182, 212, 0.18);
+  --color-cyan-badge-text: #38bdf8;
+  --color-blue-badge-bg: rgba(2, 132, 199, 0.22);
+  --color-blue-badge-text: #60a5fa;
+  
+  --shadow-sm: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 10px 25px -3px rgba(0, 0, 0, 0.6);
+  --shadow-xl: 0 20px 35px -5px rgba(0, 0, 0, 0.7);
+  --shadow-float: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="dark"] select,
+[data-theme="dark"] option,
+[data-theme="dark"] input,
+[data-theme="dark"] textarea {
+  color-scheme: dark;
+}
+
+[data-theme="dark"] select {
+  background-color: #131d2e;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] option {
+  background-color: #101928;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] body {
+  background-color: var(--color-bg-page);
+  color: var(--color-text-main);
+}
+
+[data-theme="dark"] .app-layout {
+  background-color: var(--color-bg-page);
+}
+
+/* Scrollbars in dark mode */
+[data-theme="dark"] ::-webkit-scrollbar-track {
+  background: #0b131e;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+  background: #1e293b;
+}
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Header & Navbar Dark Mode */
+[data-theme="dark"] .site-header {
+  background-color: rgba(11, 19, 30, 0.9);
+  border-bottom: 1px solid #1e293b;
+}
+[data-theme="dark"] .site-header.is-scrolled {
+  background-color: rgba(8, 13, 22, 0.96);
+  border-bottom-color: #1e293b;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.45);
+}
+[data-theme="dark"] .logo-text-dark {
+  color: #f8fafc;
+}
+[data-theme="dark"] .nav-link {
+  color: #94a3b8;
+}
+[data-theme="dark"] .nav-link:hover,
+[data-theme="dark"] .nav-link.active {
+  color: #38bdf8;
+}
+[data-theme="dark"] .btn-text-link {
+  color: #e2e8f0;
+}
+[data-theme="dark"] .header-wishlist-badge {
+  background-color: #131c2e;
+  border-color: #1e293b;
+  color: #f8fafc;
+}
+[data-theme="dark"] .user-avatar-pill {
+  background-color: #131c2e;
+  border-color: #1e293b;
+  color: #f8fafc;
+}
+[data-theme="dark"] .mobile-nav-content {
+  background-color: #0d1522;
+  border-left: 1px solid #1e293b;
+}
+[data-theme="dark"] .mobile-nav-item {
+  color: #cbd5e1;
+}
+[data-theme="dark"] .mobile-nav-item.active {
+  color: #38bdf8;
+  background-color: rgba(56, 189, 248, 0.1);
+}
+
+/* Pages & Cards Dark Mode */
+[data-theme="dark"] .contact-page-wrapper,
+[data-theme="dark"] .profile-page-wrapper,
+[data-theme="dark"] .auth-page-wrapper,
+[data-theme="dark"] .tour-detail-wrapper,
+[data-theme="dark"] .booking-page-wrapper,
+[data-theme="dark"] .tours-catalog-wrapper,
+[data-theme="dark"] .notfound-wrapper {
+  background-color: var(--color-bg-page);
+}
+
+[data-theme="dark"] .contact-main-title,
+[data-theme="dark"] .contact-form-title,
+[data-theme="dark"] .contact-faq-title,
+[data-theme="dark"] .profile-user-fullname,
+[data-theme="dark"] .profile-section-heading,
+[data-theme="dark"] .auth-pane-title,
+[data-theme="dark"] .notfound-title,
+[data-theme="dark"] .booking-main-heading,
+[data-theme="dark"] .tour-detail-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .contact-info-card,
+[data-theme="dark"] .profile-order-card,
+[data-theme="dark"] .profile-companion-card,
+[data-theme="dark"] .profile-fav-card,
+[data-theme="dark"] .profile-review-card,
+[data-theme="dark"] .profile-notification-card,
+[data-theme="dark"] .booking-summary-card,
+[data-theme="dark"] .catalog-tour-card,
+[data-theme="dark"] .detail-card-section {
+  background-color: #101928;
+  border-color: #1e2d42;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .contact-form-card,
+[data-theme="dark"] .booking-form-box,
+[data-theme="dark"] .catalog-filters-sidebar {
+  background-color: #0e1624;
+  border-color: #1e293b;
+}
+
+[data-theme="dark"] .contact-input,
+[data-theme="dark"] .contact-textarea,
+[data-theme="dark"] .auth-form-input,
+[data-theme="dark"] .profile-field-input,
+[data-theme="dark"] .booking-input {
+  background-color: #131d2e;
+  border-color: #1e2d42;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .contact-card-value,
+[data-theme="dark"] .faq-question-text,
+[data-theme="dark"] .order-tour-title,
+[data-theme="dark"] .companion-fullname,
+[data-theme="dark"] .fav-card-title,
+[data-theme="dark"] .review-tour-title,
+[data-theme="dark"] .order-total-price,
+[data-theme="dark"] .fav-card-price {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .faq-accordion-body,
+[data-theme="dark"] .review-comment-text,
+[data-theme="dark"] .contact-main-subtitle,
+[data-theme="dark"] .auth-pane-subtitle,
+[data-theme="dark"] .notfound-desc,
+[data-theme="dark"] .logout-modal-desc {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .auth-pill-switch,
+[data-theme="dark"] .profile-tours-filter-pills {
+  background-color: #131d2e;
+}
+
+[data-theme="dark"] .auth-pill-btn.is-active,
+[data-theme="dark"] .tours-filter-btn.is-active {
+  background-color: #1e2d42;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .profile-tab-btn {
+  color: #94a3b8;
+}
+
+[data-theme="dark"] .profile-tab-btn:hover {
+  background-color: #131d2e;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .profile-tab-btn.is-active {
+  background-color: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .profile-tab-btn.is-active .profile-tab-badge {
+  color: #38bdf8;
+}
+
+[data-theme="dark"] .btn-profile-logout {
+  background-color: #131d2e;
+  border-color: #2a3a52;
+  color: #f87171;
+}
+
+[data-theme="dark"] .btn-profile-logout:hover {
+  background-color: #271a22;
+  border-color: #7f1d1d;
+}
+
+[data-theme="dark"] .logout-modal-card {
+  background-color: #101928;
+  border: 1px solid #1e2d42;
+}
+
+[data-theme="dark"] .logout-modal-title {
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .btn-logout-cancel,
+[data-theme="dark"] .btn-notfound-home {
+  background-color: #131d2e;
+  border-color: #1e2d42;
+  color: #f8fafc;
+}
+
+[data-theme="dark"] .site-footer {
+  background-color: #070c14;
+  border-top: 1px solid #152030;
+}
+
+[data-theme="dark"] .footer-brand-desc,
+[data-theme="dark"] .footer-link-btn,
+[data-theme="dark"] .footer-copyright {
+  color: #8392a5;
+}
+
+[data-theme="dark"] .footer-link-btn:hover {
+  color: #38bdf8;
+}
